@@ -1,9 +1,10 @@
 #!/bin/bash
 
 contador=0;
+sleep 12
 while true
 do
-	wget -q --tries=10 --timeout=20 --spider http://google.com
+	wget -q --tries=10 --timeout=20 --spider google.com
 	if [[ $? -eq 0 ]]; 
 	then
 		if [[ contador -eq 0 ]];
@@ -12,6 +13,7 @@ do
 			vlc http://167.114.100.40:5859/stream &
 			((contador=contador+1))
 			echo $contador
+			sleep 10
 		fi
 
 	else
