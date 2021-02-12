@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type = Application
+Comment=
+Exec = lxterminal -e /home/pi/radiovida/conectado.sh
+Terminal=false
+Hidden=false
